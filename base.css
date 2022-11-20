@@ -1,0 +1,124 @@
+:root {
+    --theme-white: white;
+    --theme-black: black;
+    --button-hover: #ccc;
+    --font-color-white: white;
+    --font-color-black: black;
+}
+
+/* default web */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    /* width: 100%; */
+}
+
+.adjust_width780-center {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+/* Heading tabs */
+
+.heading_tabs {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.heading_tabs .heading {
+    font-weight: 300;
+}
+
+.heading_tabs .title {
+    color: rgb(167, 167, 167);
+    padding: 28px 0 24px;
+}
+
+.active {
+    display: block!important;
+}
+.inline_element {
+    display: inline!important;
+}
+
+/* color */
+.white {
+    color: white;
+}
+
+.bk_white {
+    background-color: white;
+}
+
+.black {
+    color: black;
+}
+
+.bk_black {
+    background-color: black;
+}
+
+/* button */
+
+.button {
+    font-size: 14px;
+    font-weight: 450;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+}
+
+.button:hover {
+    color: var(--font-color-black);
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+.button-hover:hover {
+    color: var(--font-color-black);
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* SMARPHONE */
+@media (max-width: 767px) {
+    .slider .slider_box .slider_box--des{
+        display: none;
+    }
+
+    #theBank {
+        margin: 0 14px;
+    }
+
+    #content_tour .buyTicket,.list_addressEven {
+        margin: 0 14px;
+
+    }
+
+    #content_tour .buyTicket {
+        margin-bottom: 24px;
+    }
+    #content_tour .list_addressEven {
+        display: flex;
+    }
+
+    #contact {
+        margin: 0 14px;
+
+    }
+}

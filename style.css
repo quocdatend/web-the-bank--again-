@@ -1,0 +1,445 @@
+   /* HEADER */
+#header {
+    width: 100%;
+    height: 46px;
+    background-color:#000;
+    font-size: 16px;
+    position:fixed;
+}
+
+.header_list {
+    display: flex;
+    list-style: none;
+    font-weight: 400;
+}
+
+.header_list li {
+    padding: 14px 24px;
+}
+
+.header_list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header_list li .fa-sort-down {
+    color: var(--font-color-white);
+    position: absolute;
+    top: 12px;
+    padding-left: 2px;
+}
+
+
+.header_list_child  {
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    list-style: none;
+    margin: 14px -24px;
+    box-shadow: 0px 0px 8px #00000030;
+}
+
+.header_list_child li {
+    display: block;
+    width: 160px;
+    height: 38px;
+    padding-left: 15px;
+    line-height: 10px;
+}
+
+.header_search {
+    width: 50px;
+    height: 46px;
+    float: right;
+    margin-top: -46px;
+}
+
+.header_search .fa-search {
+    color: var(--font-color-white);
+    padding-top: 15px;
+    padding-left: 18px;
+}
+
+        /* header: hover */
+.header_list li:hover {
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+.header_list li:hover a {
+    color: rgb(0, 0, 0);
+}
+
+.header_list li:hover a .fa-sort-down {
+    color: rgb(0, 0, 0);
+}
+
+
+.header_list li:last-child:hover .header_list_child {
+    display: block;
+}
+
+.header_search:hover {
+    cursor: pointer;
+    background-color: rgba(255, 32, 32, 0.886);
+}
+
+/* SLIDER */
+
+.slider {
+    width: 100%;
+    padding-top: 46px;
+}
+
+.slider_box {
+    display: none;
+}
+
+.slider_img {
+    width: 100%;
+}
+
+.slider_box--des {
+    text-align: center;
+    margin-top: -112px;
+    color: #fff;
+    padding-bottom: 44px;
+}
+
+.slider_box--des h3 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.slider_box--des p {
+    font-weight: 450;
+}
+
+/* CONTENT  */
+    /* THE BANK */
+
+#theBank {
+    max-width: 780px;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.theBank_heading {
+    padding: 36px 0 24px 0;
+}
+
+.theBank_heading h1 {
+    font-weight: 400;
+    padding-bottom: 26px
+}
+
+.theBank_heading .title {
+    color: rgb(158, 158, 158);
+}
+
+.band_description {
+    line-height: 1.4;
+    text-align:justify;
+}
+
+.band_listName {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 35px;
+}
+
+.band_listName .title_name {
+    padding: 18px 0;
+    font-size: 16px;
+}
+
+.band_listName img {
+    width: 155px;
+    border-radius: 4px;
+}
+
+    /* TOUR */
+#content_tour {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.content_tour--heading {
+    padding: 36px 0 26px 0;
+}
+
+
+.buyTicket {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.buyTicket div {
+    height: 40px;
+    background-color: #fff;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    text-align: left;
+    line-height: 40px;
+}
+
+.time_buyTicket {
+    color: rgb(139, 139, 139);
+    padding: 0 18px;
+    height: inherit;
+}
+
+.sold_out {
+    display: none;
+    margin: 12px;
+    padding: 4px 6px;
+    background-color: rgb(255, 38, 38);
+    color: white;
+    border-radius: 2px;
+}
+
+.amount_ticket {
+    display: none;
+    width: 26px;
+    line-height: 28px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    float: right;
+    border-radius: 50%;
+    margin-right: 18px;
+    margin-top: 5px;
+}
+
+.list_addressEven {
+    display: flex;
+    justify-content: space-between;
+    max-width: 780px;
+    padding-bottom: 100px;
+    margin: 32px auto 0;
+}
+
+.buyWithEven {
+    width: 246px;
+    text-align: left;
+    color: black;
+    background-color: white;
+    
+}
+
+.buyWithEven img {
+    width: 246px;
+}
+
+.buyWithEven .heading {
+    padding: 20px 16px;
+}
+
+.buyWithEven .title {
+    padding: 0  0  20px 16px;
+    color: rgb(166, 166, 166);
+}
+
+.buyWithEven .description {
+    padding: 0  0  20px 16px;
+    line-height: 1.4;
+}
+
+.buyWithEven .buy_ticket {
+    margin: 0  0  16px 16px;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    font-weight: 450;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+
+}
+
+    /* HOVER */
+
+.buyWithEven img:hover {
+    filter: brightness(70%);
+}
+
+.buyWithEven .buy_ticket:hover {
+    color: var(--font-color-black);
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+    /* CONTACT */
+
+.contact_list_input {
+    max-width: 780px;
+    padding-top: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_info-contact  p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 6px;
+}
+
+.list_info-contact  p:first-child {
+    padding-top: 4px;
+}
+
+.list_info-contact  p i {
+    font-size: 14px;
+    padding-right: 12px;
+}
+
+.button_info-send input {
+    height: 40px;
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.button_info-send .message {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.button_send_contact {
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+/* footer */
+#footer img {
+    width: 100%;
+}
+
+#footer .icon_web {
+    text-align: center;
+    padding: 80px 0 100px;
+}
+
+#footer .icon_web i {
+    font-size: 24px;
+    color: #656565;
+    padding-bottom: 24px;
+}
+
+#footer .icon_web p {
+    color: #656565;
+}
+
+#footer .icon_web p a {
+    color: #656565; 
+}
+
+/* box-buy-ticket */
+.box_buy-ticket {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.289);
+    z-index: 9999999;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+
+.box_buy-ticket .box {
+    /* display: none; */
+    margin: auto;
+    max-width: 900px;
+    height: 472px;
+    background-color: var(--theme-white);
+    transform: translateY(25%);
+}
+
+.box .box_heading {
+    height: 130px;
+    text-align: center;
+    background-color: #009688;
+    color: var(--font-color-white);
+}
+
+.box .box_heading .main_heading {
+    line-height: 130px;
+}
+.box .box_heading .main_heading i {
+    padding-right: 6px;
+}
+
+.box_heading .fa-times {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--font-color-white);
+    padding: 12px 16px;
+}
+
+.box_content {
+    padding: 0 14px;
+}
+
+.box_content p {
+    padding: 14px 0;
+}
+
+.box_content p i {
+    font-size: 12px;
+}
+
+.box_content input {
+    width: 100%;
+    height: 40px;
+    padding-left: 6px;
+}
+
+.box_content .pay {
+    display: block;
+    width: 100%;
+    height: 54px;
+    font-size : 16px;
+    color: var(--font-color-white);
+    background-color: #009688;
+    border: none;
+    border-radius: 4px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.box_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+.box_footer .close {
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+    color: var(--font-color-white);
+    background-color: rgb(255, 74, 74);
+    border: none;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.box_footer .close i {
+    font-size: 15px;
+}
+
+.box_footer p {
+    margin-top: 12px;
+}
+
+.box_footer p a {
+    color: rgb(30, 154, 255);
+}
+
